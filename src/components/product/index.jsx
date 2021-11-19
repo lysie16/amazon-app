@@ -1,10 +1,15 @@
 import React from 'react'
 import './styles.css'
 
-function Product({ id, title, image, price, rating}) {
+ function Product({ id, title, image, price, rating}) {
+
+    const Cart = (a) => {
+        alert(a);
+      }
+
     return (
         <div className="product">
-            <div className="product_info">
+        <div className="product_info">
             <p>{title}</p>
             <p className="product_price">
                 <small>$</small>
@@ -16,13 +21,13 @@ function Product({ id, title, image, price, rating}) {
                 .map((_) => (
                     <p>⭐</p>
                 ))}
-            </div>
-            </div>
+         </div>
+        </div>
     
             <img src={image}  alt="" />
-            <button>Add to basket</button>
+            <button onClick={() => Cart("Added to Cart")}>Add to basket</button>
         </div>
     );
 }
 
-export default Product
+export default Product;

@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles.css';
 import { Link } from "react-router-dom";
+// import useStateValue from '../../StateProvider';
 // import { SearchIcon } from '@mui/icons-material/Search';
 // import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 
@@ -59,7 +60,7 @@ function Header() {
              {/* Shopping Basket Icon */}
             {/* <ShoppingBasketIcon /> */}
              {/* Number of items in the basket */}
-             <span className="header_optionLineTwo header_basketCount" >0</span>
+             <span className="header_optionLineTwo header_basketCount">0</span>
          </div>
         </Link>
       </nav>
