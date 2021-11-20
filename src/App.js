@@ -1,9 +1,10 @@
 import './App.css';
-import {BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Header from './components/header/index';
 import Home from "./components/pages/home/index";
 import Checkout from "./components/pages/checkout/index";
 import Login from "./components/pages/login/index";
+import Categories from "./components/categories/index";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           </Route>
            <Route path="/">
              <Header />
+             <Categories />
              <Home />
            </Route>
         </Switch>
